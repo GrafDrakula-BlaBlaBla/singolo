@@ -435,6 +435,11 @@ section {
                 padding: 10px;
                 border: 1px solid #f0d8d9;
                 border-radius: 10px;
+                transition: .5s ease;
+            }
+            .btn-form:hover {
+                background: #2d303a;
+                border: 1px solid #2d303a;
             }
 
             .contacts p {
@@ -495,7 +500,7 @@ section {
             display: inline-block;
             width: 32px;
             height: 32px;
-            border: 1px solid black;
+            border: 1px solid #666d89;
             border-radius: 100%;
             margin-right: 8px;
             box-sizing: border-box;
