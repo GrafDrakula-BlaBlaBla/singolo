@@ -1,3 +1,3 @@
 # singolo
 
-https://GrafDrakula-BlaBlaBla.github.io/singolo/index.html
+https://GrafDrakula-BlaBlaBla.github.io/singolo/
