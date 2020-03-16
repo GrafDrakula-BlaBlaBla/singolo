@@ -28,30 +28,46 @@
 
 
 
-// Slider
-let prev = document.querySelector('.slider_wrap .prev');
-let next = document.querySelector('.slider_wrap .next');
-let i = 0;
-function slider() {
-    let blokSlider = document.querySelector('.slider');
-    let slids = document.querySelectorAll('.slider_wrap .slide');
-    slids[i].classList.remove(`showSlide`);
-    slids[i].classList.add(`hideSlide`);
-    blokSlider.classList.toggle(`back`);
+// // Slider
+// let prev = document.querySelector('.slider_wrap .prev');
+// let next = document.querySelector('.slider_wrap .next');
+// let i = 0;
+// function slider() {
+//     let blokSlider = document.querySelector('.slider');
+//     let slids = document.querySelectorAll('.slider_wrap .slide');
+//     slids[i].classList.remove(`showSlide`);
+//     slids[i].classList.add(`hideSlide`);
+//     blokSlider.classList.toggle(`back`);
     
 
-    i++;
+//     i++;
 
-    if(i >= slids.length) {
-        i = 0;
-    }
+//     if(i >= slids.length) {
+//         i = 0;
+//     }
 
-    slids[i].classList.remove(`hideSlide`);
-    slids[i].classList.add(`showSlide`);
-    // blokSlider.classList.toggle(`back`);  
-}
-
+//     slids[i].classList.remove(`hideSlide`);
+//     slids[i].classList.add(`showSlide`);  
+// }
+// next.addEventListener(`click`, slider);
 // prev.addEventListener(`click`, slider);
-next.addEventListener(`click`, slider);
-prev.addEventListener(`click`, slider);
 
+
+// Portfolio
+
+const buttons = document.querySelector(`.gallery-buttons`);
+buttons.addEventListener('click', (event) => {
+    buttons.querySelectorAll('button').forEach(el => el.classList.remove('activeP'));
+    event.target.classList.add('activeP');
+});
+
+
+const borderImg = document.querySelector('.portfolio .gallary-images');
+borderImg.addEventListener('click', (event) => {
+    borderImg.querySelectorAll('.photo .image').forEach(el => el.classList.remove('activeI'));
+    event.target.classList.add('activeI');
+});
+
+
+
+// Form

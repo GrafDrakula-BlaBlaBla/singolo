@@ -96,58 +96,58 @@
                 <h2 class="caption">Portfolio</h2>
                 <p class="description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
                 <ul class="gallery-buttons">
-                    <li><button class="gallery-buttons_btn">All</button></li>
+                    <li><button class="gallery-buttons_btn activeP">All</button></li>
                     <li><button class="gallery-buttons_btn">Web Design</button></li>
                     <li><button class="gallery-buttons_btn">Graphic Design</button></li>
                     <li><button class="gallery-buttons_btn">Artwork</button></li>
                 </ul>
                 <div class="gallary-images">
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item1.png" alt=""></a>
+                        <img class="image activeI" src="assets/item1.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item2.png" alt=""></a>
+                        <img class="image" src="assets/item2.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item3.png" alt=""></a>
+                        <img class="image" src="assets/item3.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item4.png" alt=""></a>
+                        <img class="image" src="assets/item4.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item5.png" alt=""></a>
+                        <img class="image" src="assets/item5.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item6.png" alt=""></a>
+                        ><img class="image" src="assets/item6.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item7.png" alt=""></a>
+                        <img class="image" src="assets/item7.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item8.png" alt=""></a>
+                        <img class="image" src="assets/item8.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item9.png" alt=""></a>
+                        <img class="image" src="assets/item9.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item10.png" alt=""></a>
+                        <img class="image" src="assets/item10.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item11.png" alt=""></a>
+                        <img class="image" src="assets/item11.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <a href="#"><img class="image" src="assets/item12.png" alt=""></a>
+                        <img class="image" src="assets/item12.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                 </div>
@@ -208,10 +208,18 @@
                 <form class="form">
                     <input class="input" type="text" placeholder="Name (Required)">
                     <input class="input" type="email" placeholder="Email (Required)">
-                    <input class="input" type="text"  placeholder="Subject">
-                    <textarea name="textarea" class="detail" cols="30" rows="10" placeholder="Describe your project in detail"></textarea>
-                    <button class="btn-form">Submit</button>
+                    <input id="subject" class="input burgundy" type="text"  placeholder="Subject">
+                    <textarea id="description" name="textarea burgundy" class="detail" cols="30" rows="10" placeholder="Describe your project in detail"></textarea>
+                    <button id="form-button" type="submit" class="btn-form burgundy send">Submit</button>
                 </form>
+                <div id="message-block" class="hidden">
+                    <div id="message">
+                        <p>Письмо отправлено</p>
+                        <p><span id="message-subject"></span></p>
+                        <p><span id="message-description"></span></p>
+                        <button id="close-button">OK</button>
+                    </div>
+                </div>
             <div class="contacts">
                 <h2 class="compare"></h2>
                 <p class="story">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>

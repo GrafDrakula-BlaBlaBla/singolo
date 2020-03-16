@@ -269,6 +269,11 @@ button {
             border: 1px solid white;
         }
 
+        .activeP {
+            color: white;
+            border: 1px solid white;
+        }
+
     .gallary-images {
         display: flex;
         flex-wrap: wrap;
@@ -280,6 +285,11 @@ button {
             width:220px;
             height: 190px;
             margin-bottom: 18px;
+        }
+
+        .activeI {
+            box-sizing: border-box;
+            border: 5px solid #F06C64;
         }
 
 /* About Us         */  
@@ -473,6 +483,29 @@ section {
                 background: #2d303a;
                 border: 1px solid #2d303a;
             }
+                #message-block{
+                    position: absolute;
+                    width: 100vw;
+                    height: 100vh;
+                    top: 2798px;
+                    left: 0;
+                    background: #0008;
+                }
+                
+                #message-block.hidden{
+                    display: none;
+                }
+
+                #message{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    border: 2px solid black;
+                    background-color: darkred;
+                    font-family: Lato-Regular;
+                    text-align: center;
+                }
+                
 
             .contacts p {
                 font-size: 12px;
