@@ -29,7 +29,6 @@ document.querySelector(`.horizontal`).addEventListener(`click`,(event) => {
 
 
 // Slider
-<<<<<<< HEAD
 let prev = document.querySelector('.slider_wrap .prev');
 let next = document.querySelector('.slider_wrap .next');
 let i = 0;
@@ -72,7 +71,5 @@ borderImg.addEventListener('click', (event) => {
 
 
 // Form
-=======
 
 
->>>>>>> gh-pages

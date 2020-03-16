@@ -121,15 +121,11 @@ section {
                 align-items: center;
                 justify-content: center;
             }
-<<<<<<< HEAD
             
-                .slider_items .margin {
-=======
                 .slider_items .vertical {
                     position: relative;
                     width: 216px;
                     height: 458px;
->>>>>>> gh-pages
                     margin-right: 98px;
                     background:url("assets/phone-vertical.svg");  
                     background-position: center;
@@ -156,16 +152,6 @@ section {
                     display: none;
                 }
 
-<<<<<<< HEAD
-                .none {
-                    display: none;
-                }
-
-                .slider_items .slide2 {
-                    background: #648BF0;
-                }
-=======
->>>>>>> gh-pages
 
         .slider_control {
             position: relative;
@@ -186,6 +172,10 @@ section {
         .back {
             /* background: #648BF0; */
             background: #f06c64;
+        }
+
+        .slide2 {
+            background: #648BF0
         }
 
         .slide2 img {
