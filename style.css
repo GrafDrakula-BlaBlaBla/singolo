@@ -94,6 +94,10 @@ section {
                 color: #f06c64;
             }
 
+            .menu .active {
+                color: #f06c64;
+            }
+
 /* Slider     */
     .slider {
         width: 100%;
