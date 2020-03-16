@@ -116,8 +116,36 @@ section {
                 align-items: center;
             }
                 .slider_items .vertical {
+                    position: relative;
+                    width: 216px;
+                    height: 458px;
                     margin-right: 98px;
+                    background:url("assets/phone-vertical.svg");  
+                    background-position: center;
                 }
+                    .slider_items .vertical>.phone-display {
+                        position: absolute;
+                        top: 65px;
+                        left: 14px;
+                    }
+                
+                .slider_items .horizontal {
+                    position: relative;
+                    width: 458px;
+                    height: 216px;
+                    background:url("assets/phone-horizontal.svg");  
+                    background-position: center;
+                }
+                    .slider_items .horizontal>.phone-display {
+                        position: absolute;
+                        top: 14px;
+                        left: 60px;
+                    }
+                .none {
+                    display: none;
+                }
+
+
         .slider_control {
             display: block;
             width: 23px;
@@ -144,6 +172,8 @@ section {
         .slider_control_next:hover {
             background-image: url("assets/rightW.png");
         }
+
+        
 
 /* Services         */
     .services {

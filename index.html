@@ -8,36 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="singolo1">
+    <section id="Home" class="singolo1">
             <header class="wrapper">
                     <div class="logo"><a href="#">SINGOLO<span>*</span></a></div>
                     <nav>
                         <ul class="menu">
-                            <li><a href="Home" class="active">Home</a></li>
-                            <li><a href="Services">Services</a></li>
-                            <li><a href="Portfolio">Portfolio</a></li>
-                            <li><a href="About">About</a></li>
-                            <li><a href="Contact">Contact</a></li>
+                            <li><a href="#Home" class="active">Home</a></li>
+                            <li><a href="#Services">Services</a></li>
+                            <li><a href="#Portfolio">Portfolio</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Contact">Contact</a></li>
                         </ul>
                     </nav>
             </header>
             <div class="slider wrapper">
                 <div class="slider_wrap">
-                <a class="slider_control slider_control_prev" href="#" role="button"></a>
+                <a class="slider_control slider_control_prev prevControl" href="#" role="button"></a>
                   <div class="slider_items">
                     <div class="slider_item vertical">
-                      <figure><img src="assets/vertical.png" alt=""></figure>
+                      <figure class="phone-display"><img src="assets/phone-vertical-display.png" alt=""></figure>
                       <figcaption></figcaption>
                     </div>
-                    <div class="slider__item">
-                        <figure><img src="assets/horizontal.png" alt=""></figure>
+                    <div class="slider_item horizontal">
+                        <figure class="phone-display"><img src="assets/phone-horizontal-display.png" alt=""></figure>
                         <figcaption></figcaption>
-                      </div>
+                    </div>
                   </div>
-                <a class="slider_control slider_control_next" href="#" role="button"></a>
+                <a class="slider_control slider_control_next nextControl" href="#" role="button"></a>
                 </div>
             </div> 
-            <div class="services wrapper indent">
+            <div id = "Services" class="services wrapper indent">
                 <h2 calss="caption">Our Services</h2>
                 <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="row">           
@@ -81,7 +81,7 @@
             </div>   
         <!-- </div> -->
     </section>
-    <section class="singolo2">
+    <section id="Portfolio" class="singolo2">
             <div class="portfolio wrapper indent">
                 <h2 class="caption">Portfolio</h2>
                 <p class="description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
@@ -142,7 +142,7 @@
                     </figure>
                 </div>
             </div>
-            <div class="aboutus wrapper indent">
+            <div id="About" class="aboutus wrapper indent">
                 <h2 class="caption">About Us</h2>
                 <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="gallary-aboutus">
@@ -191,7 +191,7 @@
                 </div>
             </div>
     </section>
-     <section class="singolo3 wrapper indent">
+     <section id="Contact" class="singolo3 wrapper indent">
             <h2 class="caption compare">Get a Quote</h2>
             <p class="description story">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="form-wrap">
