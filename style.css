@@ -122,6 +122,10 @@ section {
                     margin-right: 98px;
                 }
 
+                .none {
+                    display: none;
+                }
+
                 .slider_items .slide2 {
                     background: #648BF0;
                 }
