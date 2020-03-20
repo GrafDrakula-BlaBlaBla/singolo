@@ -41,18 +41,6 @@
                             </div>
                         </div>
                         <a class="slider_control slider_control_next next" href="#" role="button"></a>
-                <!-- <a class="slider_control slider_control_prev prevControl" href="#" role="button"></a>
-                  <div class="slider_items">
-                    <div class="slider_item vertical">
-                      <figure class="phone-display"><img src="assets/phone-vertical-display.png" alt=""></figure>
-                      <figcaption></figcaption>
-                    </div>
-                    <div class="slider_item horizontal">
-                        <figure class="phone-display"><img src="assets/phone-horizontal-display.png" alt=""></figure>
-                        <figcaption></figcaption>
-                    </div>
-                  </div>
-                <a class="slider_control slider_control_next nextControl next" href="#" role="button"></a> -->
                 </div>
             </div> 
             <div id = "Services" class="services wrapper indent">
@@ -96,8 +84,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>   
-        <!-- </div> -->
+            </div> 
     </section>
     <section id="Portfolio" class="singolo2">
             <div class="portfolio wrapper indent">
@@ -214,8 +201,8 @@
             <p class="description story">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="form-wrap">
                 <form class="form">
-                    <input class="input" type="text" placeholder="Name (Required)">
-                    <input class="input" type="email" placeholder="Email (Required)">
+                    <input id="name" class="input" type="text" placeholder="Name (Required)">
+                    <input id="email" class="input" type="email" placeholder="Email (Required)">
                     <input id="subject" class="input burgundy" type="text"  placeholder="Subject">
                     <textarea id="description" name="textarea burgundy" class="detail" cols="30" rows="10" placeholder="Describe your project in detail"></textarea>
                     <button id="form-button" type="submit" class="btn-form burgundy send">Submit</button>
@@ -228,33 +215,36 @@
                         <button id="close-button">OK</button>
                     </div>
                 </div>
-            <div class="contacts">
-                <h2 class="compare"></h2>
-                <p class="story">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                <ul class="contact-items">
-                    <li class="location"><a href="#">Elm St. 14/05 Lost City</a></li>
-                    <li class="phone"><a href="tel:03528 331 86 35">03528 331 86 35</a></li>
-                    <li class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></li>
-                </ul>
-            </div> 
-            </div>        
+                <div class="contacts">
+                    <h2 class="compare"></h2>
+                    <p class="story">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                    <ul class="contact-items">
+                        <li class="location"><a href="#">Elm St. 14/05 Lost City</a></li>
+                        <li class="phone"><a href="tel:03528 331 86 35">03528 331 86 35</a></li>
+                        <li class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></li>
+                    </ul>
+                </div> 
+            </div>                 
     </section>
     <section >
     <footer class="wrapper">
-        <!-- <div class="info"> -->
             <p class="story">© Copyright 2013 </p>
             <ul class="social-list">
                 <li ><a class="facebook" href="#"></a></li>
                 <li><a class="google" href="#"></a></li>
                 <li><a class="twitter" href="#"></a></li>
                 <li><a class="linkedin" href="#"></a></li>
-            </ul>    
-        <!-- </div> -->
-        
-    
-    </footer>    
+            </ul>
+        </footer>    
     </section>
-
+    
+    <div class="message">
+        <div class="sendM"><h2>The letter was sent</h2></div>
+        <div class="subjectM">No subject</div>
+        <div class="descripM">No description</div>
+        <button class="close" type="button">OK</button>
+    </div>
+    <div id="overlay" ></div>
 
 </body>
 <script src="script.js"></script>
