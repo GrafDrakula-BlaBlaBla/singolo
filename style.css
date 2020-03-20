@@ -40,16 +40,72 @@ section {
     width: 1020px;
     min-height: 100vh;
     margin: 0 auto;
+    /* overflow: hidden; */
 }
 
     .wrapper {
         max-width: 940px;
         padding: 0 40px;
+        /* overflow: hidden; */
     }
 
     .indent {
         padding-top: 62px;
         padding-bottom: 72px;
+    }
+
+    .message{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 200ms ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: white;
+        max-width: 40%;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .message .sendM {
+        margin-bottom: 5px;
+        border-bottom: 1px solid black;
+    }
+
+    .message .close {
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        transition: 1s ease;
+        width: 100px;
+    }
+    
+        .message .close:hover {
+            background-color: red;
+        }
+
+    .message.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    #overlay {
+        position: fixed;
+        opacity: 0;
+        transition: 200ms ease-in-out;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .5);
+        pointer-events: none;
+    }
+
+    #overlay.active {
+        opacity: 1;
+        pointer-events: all;
     }
 
 /* ********************************** */
@@ -101,20 +157,25 @@ section {
 /* Slider     */
     .slider {
         width: 100%;
-        background: #f06c64;
+        background: #648BF0;
+        /* background: #f06c64; */
         padding-top: 52px;
         padding-bottom: 88px;
     }
         .slider_wrap {
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
         }
             .slider_items {
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
+                justify-content: center;
             }
+            
                 .slider_items .vertical {
                     position: relative;
                     width: 216px;
@@ -147,9 +208,33 @@ section {
 
 
         .slider_control {
+            position: relative;
             display: block;
             width: 23px;
             height: 27px;
+            /* z-index: 100; */
+        }
+
+        .hideSlide {
+            display: none;
+        }
+
+        .showSlide {
+            display: flex;
+        }
+
+        .back {
+            /* background: #648BF0; */
+            background: #f06c64;
+        }
+
+        .slide2 {
+            background: #648BF0
+        }
+
+        .slide2 img {
+            max-width: 100%;
+            height: 461px;
         }
         
           
@@ -271,6 +356,11 @@ button {
             border: 1px solid white;
         }
 
+        .activeP {
+            color: white;
+            border: 1px solid white;
+        }
+
     .gallary-images {
         display: flex;
         flex-wrap: wrap;
@@ -282,6 +372,11 @@ button {
             width:220px;
             height: 190px;
             margin-bottom: 18px;
+        }
+
+        .activeI {
+            box-sizing: border-box;
+            border: 5px solid #F06C64;
         }
 
 /* About Us         */  
@@ -475,6 +570,29 @@ section {
                 background: #2d303a;
                 border: 1px solid #2d303a;
             }
+                #message-block{
+                    position: absolute;
+                    width: 100vw;
+                    height: 100vh;
+                    top: 2798px;
+                    left: 0;
+                    background: #0008;
+                }
+                
+                #message-block.hidden{
+                    display: none;
+                }
+
+                #message{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    border: 2px solid black;
+                    background-color: darkred;
+                    font-family: Lato-Regular;
+                    text-align: center;
+                }
+                
 
             .contacts p {
                 font-size: 12px;
