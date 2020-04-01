@@ -4,89 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singolo</title>
-    <link rel="stylesheet" href="assets/fonts/fonts.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section id="Home" class="singolo1">
-            <header class="wrapper">
-                    <div class="logo"><a href="#">SINGOLO<span>*</span></a></div>
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="#Home" class="active">Home</a></li>
-                            <li><a href="#Services">Services</a></li>
-                            <li><a href="#Portfolio">Portfolio</a></li>
-                            <li><a href="#About">About</a></li>
-                            <li><a href="#Contact">Contact</a></li>
-                        </ul>
-                    </nav>
-            </header>
-            <div class="slider wrapper back">
-                <div class="slider_wrap">
-                    <a class="slider_control slider_control_prev prev" href="#" role="button"></a>
-                        <div class="slider_items showSlide slide">
-                            <div class="slider_item margin ">
-                              <figure class="vertical"><img class="phone-display" src="assets/phone-vertical-display.png" alt=""></figure>
-                              <figcaption></figcaption>
-                            </div>
-                            <div class="slider_item ">
-                                <figure class="horizontal"><img class="phone-display" src="assets/phone-horizontal-display.png" alt=""></figure>
-                                <figcaption></figcaption>
-                            </div>
-                        </div>
-                        <div class="slider_items back hideSlide slide">
-                            <div class="slider_item slide2">
-                                <figure><img src="assets/slide2.png" alt=""></figure>
-                                <figcaption></figcaption>
-                            </div>
-                        </div>
-                        <a class="slider_control slider_control_next next" href="#" role="button"></a>
-                </div>
-            </div> 
-            <div id = "Services" class="services wrapper indent">
-                <h2 calss="caption">Our Services</h2>
-                <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="row">           
-                    <ul class="services_items">
-                        <li class="services_item">
-                            <div class="img"><img src="assets/pen.png" alt=""></div>
-                            <h3>Custom Design</h3>
-                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        </li>
-                            <li class="services_item">
-                                <div class="img space"><img src="assets/pen.png" alt=""></div>
-                                <h3>Custom Design</h3>
-                                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                            </li>
-                            <li class="services_item">
-                                <div class="img space"><img src="assets/pen.png" alt=""></div>
-                                <h3>Custom Design</h3>
-                                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                            </li>
-                        </ul>
-                </div>
-                <div class="row">
-                    <ul class="services_items">
-                        <li class="services_item">
-                            <div class="img"><img src="assets/pen.png" alt=""></div>
-                            <h3>Custom Design</h3>
-                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        </li>
-                        <li class="services_item">
-                            <div class="img space"><img src="assets/pen.png" alt=""></div>
-                            <h3>Custom Design</h3>
-                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        </li>
-                        <li class="services_item">
-                            <div class="img space"><img src="assets/pen.png" alt=""></div>
-                            <h3>Custom Design</h3>
-                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        </li>
+    <section id="Home" class="s-header">
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo"><h1><a href="#">SINGOLO<span>*</span></a></h1></div>
+                <nav class="nav">
+                    <span id="trigger" class="trigger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>  
+                    <ul id="menu" class="menu smoothScroll">
+                        <li><a href="#Home" class="active">Home</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                     </ul>
+                    <ul id="response-menu" class="response-menu resp-smoothScroll">
+                        <li><a href="#Home" class="resp-active">Home</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </section> 
+    <section class="s-slider">
+            <div id="conlrol" class="s-slider__control s-slider__control-prev prev" href="#" role="button"></div>
+            <div id="conlrol" class="s-slider__control s-slider__control-next next" href="#" role="button"></div>
+            <div class="slider">
+
+                 <div class="slide">    
+                   <figure class="vertical">
+                        <img class="phone" src="./assets/phone-vertical.svg" alt="">
+                        <img class="phone-display" src="./assets/phone-vertical-display.svg" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure class="horizontal">
+                        <img  class="phone" src="./assets/phone-horizontal.svg" alt="">
+                        <img class="phone-display" src="./assets/phone-horizontal-display.svg" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </div> 
+               <div class="slide">
+                    <figure class="slide2">
+                        <img class="" src="./assets/slide2.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
                 </div>
-            </div> 
+            </div>
+    </section>   
+    <section id="Services" class="s-services padding">
+        <div class="wrapper">
+            <h2 class="caption">Our Services</h2>
+            <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <ul class="services__items">
+                    <li class="services__items-item">
+                        <div class="img"><img src="./assets/pen.png" alt=""></div>
+                        <h3>Custom Design</h3>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    </li>
+                    <li class="services__items-item">
+                        <div class="img"><img src="./assets/pen.png" alt=""></div>
+                        <h3>Custom Design</h3>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    </li>
+                    <li class="services__items-item">
+                        <div class="img"><img src="./assets/pen.png" alt=""></div>
+                        <h3>Custom Design</h3>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    </li>
+                    <li class="services__items-item">
+                        <div class="img"><img src="./assets/pen.png" alt=""></div>
+                        <h3>Custom Design</h3>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    </li>
+                    <li class="services__items-item">
+                        <div class="img space"><img src="./assets/pen.png" alt=""></div>
+                        <h3>Custom Design</h3>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    </li>
+                    <li class="services__items-item">
+                        <div class="img space"><img src="./assets/pen.png" alt=""></div>
+                        <h3>Custom Design</h3>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    </li>
+                </ul>
+        </div>
     </section>
-    <section id="Portfolio" class="singolo2">
+    <section id="Portfolio" class="s-portfolio padding">
             <div class="portfolio wrapper indent">
                 <h2 class="caption">Portfolio</h2>
                 <p class="description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula</p>
@@ -98,114 +111,117 @@
                 </ul>
                 <div class="gallary-images">
                     <figure class="photo">
-                        <img class="image activeI" src="assets/item1.png" alt="">
+                        <img class="image activeI" src="./assets/item1.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item2.png" alt="">
+                        <img class="image" src="./assets/item2.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item3.png" alt="">
+                        <img class="image" src="./assets/item3.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item4.png" alt="">
+                        <img class="image" src="./assets/item4.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item5.png" alt="">
+                        <img class="image" src="./assets/item5.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        ><img class="image" src="assets/item6.png" alt="">
+                        <img class="image" src="./assets/item6.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item7.png" alt="">
+                        <img class="image" src="./assets/item7.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item8.png" alt="">
+                        <img class="image" src="./assets/item8.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item9.png" alt="">
+                        <img class="image" src="./assets/item9.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item10.png" alt="">
+                        <img class="image" src="./assets/item10.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item11.png" alt="">
+                        <img class="image" src="./assets/item11.png" alt="">
                         <figcaption></figcaption>
                     </figure>
                     <figure class="photo">
-                        <img class="image" src="assets/item12.png" alt="">
+                        <img class="image" src="./assets/item12.png" alt="">
                         <figcaption></figcaption>
                     </figure>
-                </div>
-            </div>
-            <div id="About" class="aboutus wrapper indent">
-                <h2 class="caption">About Us</h2>
-                <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <div class="gallary-aboutus">
-                    <div class="people">
-                        <figure>
-                            <img src="assets/photo1.png" alt="">
-                            <figcaption></figcaption>
-                        </figure>
-                        <span class="name">Adam Jensen</span>
-                        <p class="story">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        <ul class="social-list">
-                            <li ><a class="facebook" href="#"></a></li>
-                            <li><a class="google" href="#"></a></li>
-                            <li><a class="twitter" href="#"></a></li>
-                            <li><a class="linkedin" href="#"></a></li>
-                        </ul>
-                    </div>
-                    <div class="people">
-                        <figure>
-                            <img src="assets/photo2.png" alt="">
-                            <figcaption></figcaption>
-                        </figure>
-                        <span class="name">Adam Jensen</span>
-                        <p class="story">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        <ul class="social-list">
-                            <li ><a class="facebook" href="#"></a></li>
-                            <li><a class="google" href="#"></a></li>
-                            <li><a class="twitter" href="#"></a></li>
-                            <li><a class="linkedin" href="#"></a></li>
-                        </ul>
-                    </div>
-                    <div class="people">
-                        <figure>
-                            <img src="assets/photo3.png" alt="">
-                            <figcaption></figcaption>
-                        </figure>
-                        <span class="name">Adam Jensen</span>
-                        <p class="story">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                        <ul class="social-list">
-                            <li ><a class="facebook" href="#"></a></li>
-                            <li><a class="google" href="#"></a></li>
-                            <li><a class="twitter" href="#"></a></li>
-                            <li><a class="linkedin" href="#"></a></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
     </section>
-     <section id="Contact" class="singolo3 wrapper indent">
+    <section id="About" class="s-aboutus padding">
+        <div class="aboutus wrapper indent">
+            <h2 class="caption">About Us</h2>
+            <p class="description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <div class="gallary-aboutus">
+                <div class="people">
+                    <figure>
+                        <img src="./assets/photo1.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <span class="name">Adam Jensen</span>
+                    <p class="story">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <ul class="social-list">
+                        <li ><a class="facebook" href="#"></a></li>
+                        <li><a class="google" href="#"></a></li>
+                        <li><a class="twitter" href="#"></a></li>
+                        <li><a class="linkedin" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="people">
+                    <figure>
+                        <img src="./assets/photo2.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <span class="name">Adam Jensen</span>
+                    <p class="story">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <ul class="social-list">
+                        <li ><a class="facebook" href="#"></a></li>
+                        <li><a class="google" href="#"></a></li>
+                        <li><a class="twitter" href="#"></a></li>
+                        <li><a class="linkedin" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="people">
+                    <figure>
+                        <img src="./assets/photo3.png" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <span class="name">Adam Jensen</span>
+                    <p class="story">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <ul class="social-list">
+                        <li ><a class="facebook" href="#"></a></li>
+                        <li><a class="google" href="#"></a></li>
+                        <li><a class="twitter" href="#"></a></li>
+                        <li><a class="linkedin" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact" class="s-form padding">
+        <div class="wrapper">
             <h2 class="caption compare">Get a Quote</h2>
             <p class="description story">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <div class="form-wrap">
+            <div class="form-items">
                 <form class="form">
-                    <input id="name" class="input" type="text" placeholder="Name (Required)">
-                    <input id="email" class="input" type="email" placeholder="Email (Required)">
+                    <input id="name" class="input" type="text" placeholder="Name (Required)" required>
+                    <input id="email" class="input" type="email" placeholder="Email (Required)" required>
                     <input id="subject" class="input burgundy" type="text"  placeholder="Subject">
                     <textarea id="description" name="textarea burgundy" class="detail" cols="30" rows="10" placeholder="Describe your project in detail"></textarea>
-                    <button id="form-button" type="submit" class="btn-form burgundy send">Submit</button>
+                    <button id="form-button" type="submit" class="btn-form burgundy send">SEND</button>
                 </form>
                 <div id="message-block" class="hidden">
                     <div id="message">
@@ -216,19 +232,20 @@
                     </div>
                 </div>
                 <div class="contacts">
-                    <h2 class="compare"></h2>
+                    <h3 class="compare">Contact information</h3>
                     <p class="story">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
                     <ul class="contact-items">
                         <li class="location"><a href="#">Elm St. 14/05 Lost City</a></li>
                         <li class="phone"><a href="tel:03528 331 86 35">03528 331 86 35</a></li>
                         <li class="mail"><a href="mailto:info@singolo.com">info@singolo.com</a></li>
                     </ul>
-                </div> 
-            </div>                 
+                </div>
+            </div> 
+        </div>
     </section>
-    <section >
-    <footer class="wrapper">
-            <p class="story">© Copyright 2013 </p>
+    <section class="s-footer">
+        <footer class="wrapper">
+            <p class="copy">&copy; Copyright 2020 </p>
             <ul class="social-list">
                 <li ><a class="facebook" href="#"></a></li>
                 <li><a class="google" href="#"></a></li>
@@ -244,9 +261,8 @@
         <div class="descripM">No description</div>
         <button class="close" type="button">OK</button>
     </div>
-    <div id="overlay" ></div>
-    
-<script src="./script.js"></script>
+    <div id="overlay" ></div> 
+<script src="script.js"></script>
 </body>
 
 </html>
